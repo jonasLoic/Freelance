@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom'
  
 function Header() {
+    const init =1
     return (
         <nav>
-            <Link to="/">Accueil</Link>
-            <Link to="/survey">Questionnaire</Link>
+            <Link to="/">Home</Link>
+            <Link to={`/survey/${init}`}>Quiz</Link>
         </nav>
     )
 }
